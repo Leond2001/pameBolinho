@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Tela de Login </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <style>
+      
+  /* Formulário com borda */
+  form {
+    border: 3px solid #f1f1f1;
+  }
+
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  /* Estiliza o botão de login */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+
+  /* Avatar image */
+  img{
+    width: 10%;
+    border-radius: 50%;
+  }
+
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+
+  a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;  
+    text-decoration: none;
+  }
+
+      
+  </style>
+  </head>
+
+  <body>
+    <div>
+
+      <form action="" method="post">
+        <div class="imgcontainer">
+          <img src="https://www.clker.com/cliparts/3/V/U/m/W/U/admin-button-icon-hi.png" alt="Avatar">
+        </div>
+        
+        <div class="container">
+        <input type="text" placeholder="Email" name="email" value="{{request.form.email}}">
+        <input type="password" placeholder="Password" name="password" value="{{request.form.password }}">
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="submit">Login</button>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <a href="/register/">Cadastrar</a>
+        </div>
+      </form>
+
+
+    </div>
+  </body>
+
+</html>

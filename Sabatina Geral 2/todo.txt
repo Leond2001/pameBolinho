@@ -1,0 +1,5 @@
+Criar uma página bonita com formulário para
+inserir as info do produto
+
+O token continua sendo enviado daquele jeito
+feio e continua sendo posto daquele jeito feio
