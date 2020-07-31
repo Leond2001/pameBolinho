@@ -6,7 +6,7 @@ from ..extensions import db
 product_api = Blueprint('product_api', __name__)
 
 @product_api.route('/users/<int:id>/products/', methods=['GET', 'POST'])
-#@jwt_required
+@jwt_required
 def create_products(id):
     if request.method == 'POST':
         # data = request.json
